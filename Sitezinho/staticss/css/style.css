@@ -1,0 +1,34 @@
+body{
+    margin: 0cm;
+}
+.nav_div{
+    display: flex;
+    background-color: dimgrey;
+    padding: 0.4cm;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: xx-large;
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+.Buttons{
+    appearance: initial;
+    color: aliceblue;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0.001cm;
+    border-radius: 0.2cm;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.Buttons:hover{
+    border-style: ridge;
+    border-color: aliceblue;
+}
+

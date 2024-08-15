@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    
+</head>
+<body>
+    <nav class="nav_div">
+        <a class="logo" href="{% url 'home' %}">Inicio site</a>
+    </nav>
+    <div class="Main_Frame">
+        <h1>Cadastre-se</h1>
+        <form action="" method="POST">
+            <div class="sup">
+                {% csrf_token %}
+                <div>
+                    {{ form.username }}
+                </div>
+                <div>
+                    {{ form.email }}
+                </div>
+                <div>
+                    {{ form.password }}
+                </div>
+            </div>
+            <button type="submit" class="Buttons">Cadastrar-se</button>
+        </form>
+    </div>
+    
+</body>
+</html>
